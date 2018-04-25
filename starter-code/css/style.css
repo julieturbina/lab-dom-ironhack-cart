@@ -1,41 +1,280 @@
-input {
-  border: solid 1px black;
+      
+.header {
+color:rgb(48, 46, 46);
+text-align: center;
+font-size:30px;
+padding-right: 150px;
+padding-left: 150px;
+} 
+      
+.wrapper {
+ width: 85%;
+ margin: 0 auto;
+ height: 250px;
+ font-size: 50px;
+ font-weight: 500;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: nowrap;
+ align-items: center;
 }
 
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
+/* ======================= */
+
+.wrapper > div {
+width: 10;
+} 
+  
+.addWrapper {
+width: 80%;
+margin: 0 auto;
+height: 100px;
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+align-items: center;
+} 
+  
+  
+.addWrapper input {
+height: 150px;
+padding: 0 10px;
+color: rgb(142, 142, 142);
+border-radius: 4px;
+border: solid 1px #ccc;
+margin-right: 15px;
+} 
+
+.wrapper span {
+font-family: 'Open Sans', sans-serif;
+} 
+  /* ===================== */
+ 
+.wrapper #units input {
+width: 180px;
+height: 30px;
+display: inline;
+padding: 0 10px;
+color: black;
+border: solid 1px black
 }
+
+
+.wrapper #units label {
+padding-right: 15px;
+}
+
 
 .btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+color: #fff;
+background-color: #14ac14;
+border-color: #4cae4c;
+position: center;
+background-color: #5cb85c;
+height:50px;
+width:120px;
+position:center;
+}
+
+.btn-create {
+color: #fff;
+background-color: #1280b5;
+border-color: #1280b5;
+}
+
+
+.btn-create:hover {
+background-color: #0f6c91;
 }
 
 .btn-delete {
-    color: #fff;
-    background-color: #CF000F;
-    border-color: #CF000F;
+color: #fff;
+background-color: #CF000F;
+border-color: #CF000F;
+color: #fff;
+background-color: #CF000F;
+transition: all 0.4s ease;
+}
+
+.btn-delete:hover {
+background-color: #960412;
 }
 
 .quantity {
-  margin: 0 5px;
+margin: 0 5px;
 }
+
+
+.calculate {
+margin-top: 50px;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 50px;
+}
+
+
+.calculate button {
+border-radius: 4px;
+font-family: 'Open Sans', sans-serif;
+padding: 0 35px;
+transition: all 0.4s ease;
+}
+
+
+
+
+.calculate button:hover {
+background-color: #04763b;
+}
+
+
+.total {
+margin-top: 50px;
+display: flex;
+justify-content: center;
+width: 100%;
+height: 50px;
+font-size: 50px;
+}
+
+
+#test {
+display: flex;
+justify-content: center;
+font-family: 'Open Sans', sans-serif;
+font-size: 30px;
+margin-top: 20px;
+width: 100%;
+height: 50px;
+}
+/* =============== */
+
+.input {
+border: solid 1px black;
+box-shadow: 1px 1px 2px grey;
+position: relative;
+/* top: 5px; */
+font-size: 14px;
+color: grey;
+}
+
+label{
+position: relative;
+left: -35px;
+top: 5px;
+font-size: 12px;
+
+}
+
+.flex-container {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+
+
+
+@@ -10,12 +22,15 @@ input {
+
+}
+
+.item {
+box-shadow: 1px grey;
+padding: 32px 20px 30px 20px;
+
+}
+
+.row {
+font-size: 16px;
+}
+
+.col-xs-2 {
+@@ -37,6 +52,12 @@ input {
+.col-xs-7 { 
+
+}
+#error-message, #error-message-NAN{
+display:none;
+margin-left: 60px;
+margin-top: 20px;
+padding-bottom: 40px;
+
+}
+.btn {
+display: inline-block;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+border: none;
+font-size: 16px;
+border-radius: 3px;
+}
+
+/* .btn-success {
+color: rgb(221, 46, 46);
+background-color: #293029;
+border-color: #041504;
+border-radius: 300px;
+padding: 10px 20px 10px 20px;
+} */
+
+.btn-result{
+text-align: right;
+height:50px;
+width:80px;
+}
+
+.btn-delete {
+color: #fff;
+background-color: rgb(133, 17, 25);
+/* border-color: #CF000F; */
+/* border: none; */
+font-size: 16px;
+border-radius: 3px;
+padding: 10px 15px 10px 15px;
+}
+
+.quantity {
+margin: 0 5px;
+}
+
+.create-new-items{
+width: 100%;
+display: block;
+height: 100px;
+}
+
+.totalpriceall{
+text-align:right;
+font-weight: bold;
+font-size: 25px;
+margin-right: 130px;
+margin-top: 20px;
+}
+
+#btn-createitem{
+padding: 10px 15px 10px 15px;
+color: #ffffff;
+display: inline-block;
+margin-left: 50px;
+
+}
+#input-productname{
+margin-left: 60px;
+}
+
+#input-price{
+margin-left: 20px;
+}
+
+span {
+font-size: 16px;
+display: inline-block;
+line-height: 32px;
+}
+
+.center{
+text-align: center;
+width: 300px;
+} 
